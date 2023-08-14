@@ -101,6 +101,7 @@ hr{
 }
 
 /* Mobile Nav */
+
 .navbar-light .navbar-toggler{
   border: none;
   outline:none;
@@ -375,7 +376,7 @@ align-items: flex-start;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.7) 0%, #fff 100%);
   cursor: pointer;
   z-index: 8;
 }
@@ -456,6 +457,15 @@ align-items: flex-start;
   opacity: 1;
 }
 
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+
 #banner {
     background-image: url("img/BANNER/hoco\ downbanner");
     width: 100%;
@@ -481,4 +491,81 @@ align-items: flex-start;
 }
 #banner button{
   background-color: coral;
+}
+
+#newsletter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url("img/BANNER/b14.png");
+  background-repeat: no-repeat;
+  background-position: 20% 30%;
+  background-color: #041e42;
+}
+#newsletter h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+#newsletter p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #818ea0;
+}
+
+#newsletter .form{
+  display: flex;
+  width: 40%;
+}
+#newsletter p span {
+  color: #ffbd27;
+}
+
+#newsletter input{
+  height: 3.125rem;
+  padding: 0 1.25em;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+
+}
+
+#newsletter button {
+  background-color: #088178;
+  color:white;
+  white-space: nowrap;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+@media (max-width: 477px) {
+  #home {
+    background-image: url("img/home.jpg");
+    padding: 0 15px;
+    background-position: top 30%;
+}
+h1 {
+  font-size: 1.2rem;
+}
+p {
+  font-size: 0.8rem;
+  margin-top: 5;
+  margin-bottom: 1rem;
+}
+#newsletter input {
+  height: 3.125rem;
+  padding: 0 4.25em;
+  font-size: 20px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
 }
